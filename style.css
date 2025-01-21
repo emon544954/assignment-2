@@ -191,7 +191,7 @@
 
   
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:576px) {
     .main-nav , .nav-links{
         display: grid;
         grid-template-columns: repeat(1,1fr);
