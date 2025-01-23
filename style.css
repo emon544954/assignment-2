@@ -200,8 +200,9 @@
     
     
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     width: 100%;
+    
     
   
   }
@@ -209,8 +210,9 @@
     
     gap: 24px;
   
-    margin-left: 130px;
+    margin-left: 70px;
     margin-right: 70px;
+
    
    
   }
@@ -223,6 +225,7 @@
   .story-content{
     display: grid;
     grid-template-columns: repeat(2,2fr);
+    max-width: 90%;
 
   }
   .big-story{
@@ -238,6 +241,7 @@
   }
   .big-pic{
     border:2px solid #ffffff;
+    
     
   }
   .img-size{
@@ -322,6 +326,46 @@
     font-weight: 700px;
     font-size: 1rem;
   }
+  /* footer section */
+  .footer-heading{
+    display: flex;
+    justify-content: space-between;
+    background-color: #90d3f1;
+    color: white;
+   
+    
+    
+  }
+  .footer-2nd{
+    display: flex;
+   gap: 300px;
+   margin-right: 60px;
+   
+ 
+  }
+  .footer-main{
+  padding: 40px;
+  
+  /* margin-left: 90px;
+  margin-right: 100px;
+   */
+  }
+  .footer-1-main{
+    display: flex;
+
+  }
+  .footer-main-1-head{
+    font-weight: bold;
+    font-size: 2.6rem;
+  }
+  .footer-descripton{
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .footer-logo{
+    display: flex;
+    margin-right: 60px;
+  }
 
 
   
@@ -395,27 +439,25 @@
        .big-story{
         display: none;
        }
-       .story-container{
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-
-       }
+      
+       
        .stories {
         background:
          linear-gradient(to bottom, rgba(255,255,255,0),rgba(254,163,1,0.50)),
          url(assets/bg.png);
         
         
-        /* background-size: cover;
-        background-position: center; */
-        width: 100%;
+       
+       background-position: center; 
+       width: 100%;
+       background-position: cover ;
+      
+        
 
       }
         .story-container{
     
-        /* gap: 1px; */
+        
       
         margin-left: 2px;
         margin-right: 2px;
@@ -433,8 +475,33 @@
         font-size: 2.85rem;
         margin-top: 30px;
        }
+       .story-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 100%;
+        margin-left: 3px;
+        margin-right: auto;
+        
+       }
+       .footer-heading{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0;
+       }
+       .footer-2nd{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0px;
+        margin-left: 50px;
+       }
+       .footer-logo{
+        display: flex;
+        max-width: 90%;
+       
+       }
+      }
    
      
    
 
-}
+
